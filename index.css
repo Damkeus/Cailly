@@ -91,3 +91,48 @@ h1 {
         font-size: 1.5em;
     }
 }
+
+
+
+.reservation-form {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #aaa;
+    top:50%;
+    left:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-form h2 {
+    text-align: center;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="time"],
+.reservation-form input[type="number"],
+.reservation-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+
+.reservation-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation-form input[type="submit"]:hover {
+    background-color: #45a049;
+}

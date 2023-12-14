@@ -29,6 +29,19 @@
         </nav>
         <div class="text">
         </div>
+        <div class="reservation-form">
+            <form action="submit_reservation.php" method="post">
+                <h2>Réservation</h2>
+                <p><input type="text" name="nom" placeholder="Nom complet"></p>
+                <p><input type="email" name="email" placeholder="Adresse e-mail"></p>
+                <p><input type="tel" name="telephone" placeholder="Numéro de téléphone"></p>
+                <p><input type="date" name="date"></p>
+                <p><input type="time" name="heure"></p>
+                <p><input type="number" name="nombre_personnes" placeholder="Nombre de personnes"></p>
+                <p><textarea name="commentaires" placeholder="Commentaires"></textarea></p>
+                <p><input type="submit" value="Réserver"></p>
+            </form>
+        </div>
     </header>
 </body>
 </html>
