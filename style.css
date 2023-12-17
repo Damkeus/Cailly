@@ -2,14 +2,14 @@
 
 -- SOMMAIRE --
 
-- IMPORT FONT ------(l.18)
+- IMPORT FONT ------(l.16)
 - GENERAL ----------(l.39)
 - RETURN TOP -------(l.63)
-- NAVIGATION BAR ---(l.108)
-- INDEX ------------(l.184)
-- DISCOVER ---------(l.381)
-- CONTACT ----------(l.798)
-- FOOTER -----------(l.990)
+- NAVIGATION BAR ---(l.109)
+- INDEX ------------(l.185)
+- gallery ---------(l.400)
+- DISCOVER ----------(l.715)
+- FOOTER -----------(l.1132)
 
 */
 
@@ -180,6 +180,19 @@ nav ul li a:hover {
         transition: 0.5s;
     }
 
+    video {
+        margin-top: 70px;
+        transform: scale(1);
+        width: 70%;
+    }
+    
+    .im {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
 }
 
 /* ------------------------------------------------------------------------ INDEX ------------------------------------------------------------------------------------------*/
@@ -255,6 +268,7 @@ nav ul li a:hover {
     padding: 30px 200px 100px 200px;
     border-bottom: 5px solid #eee;
 }
+
 
 video {
     margin-top: 100px;
@@ -394,10 +408,13 @@ video {
         transition: 0.5s;
     }
 
+    .int p {
+        padding: 20px 50px 50px 50px;
+    }
 
 }
 
-/* ----------------------------------------------------------------------------------- DISCOVER -----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------- gallery -----------------------------------------------------------------------------------*/
 .mfp-with-zoom .mfp-title, .touch .gallery-image figcaption, html:not(.touch) .gallery-image figcaption {
     position: absolute;
     top: 50%;
@@ -1128,210 +1145,6 @@ video {
     background-position: center;
     padding-bottom: 50px;
 }
-
-/* ---------------------------------------------------------------- CONTACT ------------------------------------------------------------------------*/
-
-.contpresentation {
-    display: flex;
-    flex-direction: column;
-    background-color: #222;
-    color: #eee;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 200px;
-    top: 0px;
-}
-
-.contpresentation h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #eee;
-    font-size: clamp(18px, 3vw, 30px);
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    margin: 20px;
-    padding: 20px;
-    background: #00000099;
-    border-radius: 50px;
-}
-
-.contpresentation p {
-    padding: 0 0 50px 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 90%;
-    color: #eee;
-    font-size: clamp(10px, 2vw, 20px);
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-.allcont {
-    height: 120vh;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 100px;
-    box-sizing: border-box;
-}
-
-.container:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("./assets/louvreform.jpg") no-repeat center;
-    background-size: cover;
-    filter: blur(10px);
-    z-index: -1;
-}
-
-.contact-box {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-
-}
-
-.left {
-    background: url("./assets/louvreform.jpg") no-repeat center;
-    background-size: cover;
-    height: 100%;
-}
-
-.right {
-    padding: 25px 40px;
-    height: 100%;
-}
-
-.hcont {
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
-    color: #eee;
-    font-weight: 300;
-}
-
-.hcont:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 66px;
-    border-radius: 2px;
-    background-color: #c5ac7e;
-}
-
-.field,
-.fieldarea {
-    width: 100%;
-    border: 2px solid none;
-    outline: none;
-    background-color: rgba(230, 230, 230, 0.164);
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    color: #c5ac7e;
-    box-sizing: border-box;
-}
-
-.field:hover,
-.fieldarea:hover {
-    border: rgba(230, 230, 230, 0.6) 1px solid;
-}
-
-.fieldarea {
-    min-height: 150px;
-    resize: none;
-
-}
-
-.btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    background-color: #c5ac7e;
-    color: black;
-    font-size: 1.1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn:hover {
-    background-color: rgba(197, 172, 126, 0.5);
-    color: #fff;
-}
-
-.btn:active {
-    background-color: rgba(197, 172, 126, 0);
-    color: #c5ac7e;
-}
-
-.field:focus {
-    border: 2px solid none;
-}
-
-
-
-@media screen and (max-width: 700px) {
-    .contact-box {
-        grid-template-columns: 1fr;
-    }
-
-    .left {
-        display: none;
-    }
-
-
-    .right {
-        padding: 25px 50px;
-        transition: 1s;
-    }
-
-}
-
-@media screen and (max-width: 567px) {
-    .left {
-        display: none;
-    }
-
-    .right {
-        padding: 25px 25px;
-        transition: 1s;
-    }
-
-
-}
-@media screen and (max-width: 1300px) {
-    .int p {
-        padding: 30px 70px 100px 70px;
-    }
-
-    video {
-        margin-top: 70px;
-        transform: scale(1);
-        max-width: 80%;
-    }
-}
-
 
 /* ----------------------------------------------------------------- FOOTER -------------------------------------------------------------------------*/
 
